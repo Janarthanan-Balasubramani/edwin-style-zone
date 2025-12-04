@@ -36,7 +36,7 @@ export const About: React.FC = () => {
             <div className="relative z-10 border-2 border-gold-400 p-4 group">
               <div className="relative w-full h-[400px] overflow-hidden bg-dark-800">
                 <img 
-                  src={imageSrc} 
+                  src="/pexels-delbeautybox-211032-705255.jpg"
                   alt="Salon Interior Reflection" 
                   className={`w-full h-full object-cover shadow-2xl transition-all duration-700 ${isGenerating ? 'opacity-50 blur-sm' : 'opacity-100 filter grayscale hover:grayscale-0 contrast-125'}`}
                 />

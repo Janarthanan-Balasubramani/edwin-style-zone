@@ -18,7 +18,7 @@ function App() {
         <Gallery />
       </main>
       <Contact />
-      <AIConsultant />
+     {/* <AIConsultant /> */}
     </div>
   );
 }
