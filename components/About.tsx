@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { generateSalonImage } from '../services/geminiService';
 import { Sparkles, Loader2 } from 'lucide-react';
+import AboutImg from '../assets/pexels-delbeautybox-211032-705255.jpg'
 
 export const About: React.FC = () => {
   const [imageSrc, setImageSrc] = useState("https://images.unsplash.com/photo-1521590832896-7ea20ade7dae?q=80&w=2574&auto=format&fit=crop");
@@ -36,7 +37,7 @@ export const About: React.FC = () => {
             <div className="relative z-10 border-2 border-gold-400 p-4 group">
               <div className="relative w-full h-[400px] overflow-hidden bg-dark-800">
                 <img 
-                  src="../assets/pexels-delbeautybox-211032-705255.jpg"
+                  src={AboutImg}
                   alt="Salon Interior Reflection" 
                   className={`w-full h-full object-cover shadow-2xl transition-all duration-700 ${isGenerating ? 'opacity-50 blur-sm' : 'opacity-100 filter grayscale hover:grayscale-0 contrast-125'}`}
                 />
